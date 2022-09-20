@@ -1,0 +1,100 @@
+{
+	"id": "7a15b1f0-fa85-4421-bc90-468e79a02fd6",
+	"name": "Authorization & Authentication",
+	"timestamp": "2022-09-20T02:27:03.138Z",
+	"collection_id": "18110827-1f0ca8b8-4292-4bc9-a1e8-b08e229e4ea4",
+	"folder_id": 0,
+	"environment_id": "18110827-a687e83e-1361-4921-92c7-949ea962504d",
+	"totalPass": 8,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "f20bfc06-de2c-4e92-87f9-05867ce0537a",
+			"name": "Create FFM platform administrative user",
+			"time": 313,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"User registered Successfully": true,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"User registered Successfully": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				380,
+				313
+			],
+			"allTests": [
+				{
+					"User registered Successfully": true,
+					"Response time is less than 1000ms": true
+				},
+				{
+					"User registered Successfully": true,
+					"Response time is less than 1000ms": true
+				}
+			]
+		},
+		{
+			"id": "b1d5b8a4-7aaf-40ef-915a-fb637256f069",
+			"name": "Create FFM platform administrative user Copy",
+			"time": 62,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				79,
+				62
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response time is less than 1000ms": true
+				},
+				{
+					"Status code is 403": true,
+					"Response time is less than 1000ms": true
+				}
+			]
+		}
+	],
+	"count": 2,
+	"totalTime": 834,
+	"collection": {
+		"requests": [
+			{
+				"id": "f20bfc06-de2c-4e92-87f9-05867ce0537a",
+				"method": "POST"
+			},
+			{
+				"id": "b1d5b8a4-7aaf-40ef-915a-fb637256f069",
+				"method": "POST"
+			}
+		]
+	}
+}
